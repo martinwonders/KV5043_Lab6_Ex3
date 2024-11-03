@@ -118,7 +118,7 @@ void addGameObjectsFromFile(const std::string& fileName, Window& aWindow)
 	}
 }
 
-//ToDo: Exercise 2: Create a function definition with this signature: ObjectType StringToObjectType(std::string& objectName)
+//ToDo: Exercise 5: Create a function definition with this signature: ObjectType StringToObjectType(std::string& objectName)
 //It should take a string reference and return an Object Type (the enum you created in Exercise 1)
 //this call: StringToObjectType("Player") should return ObjectType::Player
 
