@@ -24,7 +24,7 @@ void setWindowFromFile(const std::string& fileName, Window& aWindow);
 
 void addGameObjectsFromFile(const std::string& fileName, Window& aWindow);
 
-//ToDo: Exercise 2: Create the definition for this method in the filehandling.cpp file
+//ToDo: Exercise 5: Create the definition for this method in the filehandling.cpp file
 ObjectType StringToObjectType(std::string& objectName);
 
 void splitString(const std::string& str, char delimiter, std::vector<std::string> &result);
