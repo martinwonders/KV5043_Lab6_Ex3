@@ -99,11 +99,12 @@ void Window::Run()
 		GameObject &ball = GameObjectsToRender[1];
 
 		// Check for collision between the BALL and PLAYER
-		if (ball.type == ObjectType::BALL && player.type == ObjectType::PLAYER &&
-			ball.xPosition < player.xPosition + player.width &&
-			ball.xPosition + ball.width > player.xPosition &&
-			ball.yPosition < player.yPosition + player.height &&
-			ball.yPosition + ball.height > player.yPosition)
+		bool hasCollided = ball.type == ObjectType::BALL && player.type == ObjectType::PLAYER &&
+				   ball.xPosition < player.xPosition + player.width &&
+				   ball.xPosition + ball.width > player.xPosition &&
+				   ball.yPosition < player.yPosition + player.height &&
+		                   ball.yPosition + ball.height > player.yPosition;
+		if (hasCollided)
 		{
 			ball.OnCollision();  // Call OnCollision on the ball
 		}
