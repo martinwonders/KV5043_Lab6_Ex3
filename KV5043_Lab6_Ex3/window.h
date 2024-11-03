@@ -22,8 +22,8 @@ struct Colour
 //ToDo: Exercise 1: Create an enum named ObjectType with UNKNOWN, PLAYER and BALL 
 
 
-//ToDo: Exercise 3: Create a struct named GameObject with the following member variables to store the following: Object type, x position,
-// y position, width, height, Colour and velocity
+//ToDo: Exercise 2: Create a struct named GameObject with the following member variables to store the following: type (ObjectType), x position (float),
+// y position (float), width (float), height (float), colour using the above Colour struct and velocity using the above Vec2D struct.
 
 struct Window
 {
